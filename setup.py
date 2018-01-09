@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'ndblite',
   packages = ['ndblite'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.1.1',
   description = 'Quick Corp ndblite',
   author = 'Jean Machuca',
   author_email = 'correojean@gmail.com',
@@ -25,6 +25,7 @@ setup(
       'Topic :: Office/Business',
       'Topic :: Software Development :: Bug Tracking',
       ],
+  install_requires=['sqlitemodel>=0.1.1']
 )
 # patch distutils if it can't cope with the "classifiers" or
 # "download_url" keywords
